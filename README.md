@@ -33,6 +33,11 @@ I am a passionate software developer who loves building applications that solve 
 - **[ExpenseTracker](https://github.com/chirag-gupta-07/ExpenseTracker)**: A Python-based expense tracking application supporting CSV and Excel data exports.
 - **[CredifyAI](https://github.com/chirag-gupta-07/CredifyAI---AI-powered-News-Detection-System)**: An AI-powered news detection and verification system.
 - **[College Club Website Demo](https://github.com/chirag-gupta-07/College-Club-Website-Demo)**: A clean and responsive web landing page demo designed for college clubs.
+
+---
+
+### 🤝 Open Source Contributions
+
 - **[100 Days 100 Web Projects](https://github.com/chirag-gupta-07/chirag-100_days_100_web_project)**: A challenge repository containing 100+ basic to advanced frontend and web development projects using HTML, CSS, and JS.
 - **[Cara E-Commerce](https://github.com/chirag-gupta-07/Cara)**: A responsive, fully featured online shopping platform with cart functionalities and checkout pages.
 
