@@ -30,13 +30,11 @@ I am a passionate software developer who loves building applications that solve 
 
 ### 🚀 Featured Projects
 
-#### 🤖 AI / ML Projects
-- **[StockVision](https://github.com/chirag-gupta-07/StockVision)**: A deep learning pipeline built with PyTorch and LSTM networks to forecast stock prices using historical market data and sentiment analysis from financial news.
-- **[MedDetect CNN](https://github.com/chirag-gupta-07/MedDetect-CNN)**: An automated medical imaging classification system developed in TensorFlow to identify and diagnose anomalies in chest X-rays with high precision.
-
-#### ⚙️ C++ Projects
-- **[Aura Render Engine](https://github.com/chirag-gupta-07/Aura-Render-Engine)**: A high-performance, multithreaded 3D graphics rendering engine written in C++ and OpenGL, using custom memory pooling to minimize latency.
-- **[QuantumKey DB](https://github.com/chirag-gupta-07/QuantumKey-DB)**: A lightweight, thread-safe, disk-based key-value store database built in C++ featuring an LSM-Tree storage engine.
+- **[ExpenseTracker](https://github.com/chirag-gupta-07/ExpenseTracker)**: A Python-based expense tracking application supporting CSV and Excel data exports.
+- **[CredifyAI](https://github.com/chirag-gupta-07/CredifyAI---AI-powered-News-Detection-System)**: An AI-powered news detection and verification system.
+- **[College Club Website Demo](https://github.com/chirag-gupta-07/College-Club-Website-Demo)**: A clean and responsive web landing page demo designed for college clubs.
+- **[100 Days 100 Web Projects](https://github.com/chirag-gupta-07/chirag-100_days_100_web_project)**: A challenge repository containing 100+ basic to advanced frontend and web development projects using HTML, CSS, and JS.
+- **[Cara E-Commerce](https://github.com/chirag-gupta-07/Cara)**: A responsive, fully featured online shopping platform with cart functionalities and checkout pages.
 
 ---
 
