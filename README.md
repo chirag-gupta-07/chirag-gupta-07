@@ -23,7 +23,7 @@ I am a passionate software developer who loves building applications that solve 
 - 🔭 I’m currently working on expanding my knowledge in modern full stack architectures.
 - 🌱 I’m currently learning **Advanced System Design, Kubernetes, and Cloud Platform Architectures**.
 - 💬 Ask me about **React, Node.js, JavaScript, or Web Design Principles**.
-- 📫 How to reach me: [chirag.gupta.dev07@gmail.com](mailto:chiraggupta9760@gmail.com)
+- 📫 How to reach me: [chiraggupta9760@gmail.com](mailto:chiraggupta9760@gmail.com)
 - ⚡ Fun fact: I believe that code is like humor. When you have to explain it, it’s bad!
 
 ---
