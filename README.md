@@ -141,10 +141,10 @@ I am a passionate software developer who loves building applications that solve 
   <table border="0">
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=chirag-gupta-07&show_icons=true&theme=radical&hide_border=true&title_color=00F2FE&icon_color=00F2FE" width="400" alt="GitHub Stats" />
+        <img src="https://github-stats-extended.vercel.app/api?username=chirag-gupta-07&show_icons=true&theme=radical&hide_border=true&title_color=00F2FE&icon_color=00F2FE" width="400" alt="GitHub Stats" />
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chirag-gupta-07&layout=compact&theme=radical&hide_border=true&title_color=00F2FE" width="380" alt="Top Languages" />
+        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=chirag-gupta-07&layout=compact&theme=radical&hide_border=true&title_color=00F2FE" width="380" alt="Top Languages" />
       </td>
     </tr>
     <tr>
