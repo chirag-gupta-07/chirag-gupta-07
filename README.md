@@ -1,7 +1,7 @@
 # Hi there, I'm Chirag Gupta! 👋
 
 <div align="center">
-  <img src="banner.svg" alt="Chirag Gupta Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/chirag-gupta-07/chirag-gupta-07/main/banner.svg" alt="Chirag Gupta Banner" width="100%" />
 </div>
 
 <br />
