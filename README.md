@@ -1,7 +1,9 @@
 # Hi there, I'm Chirag Gupta! 👋
 
 <div align="center">
-  <img src="./banner.svg" alt="Chirag Gupta Banner" width="100%" />
+
+![Chirag Gupta Banner](./banner.svg)
+
 </div>
 
 <br />
@@ -15,7 +17,9 @@
 ### 💫 About Me
 
 <div align="center">
-  <img src="./about_me.png" alt="About Me Workspace" width="100%" />
+
+![About Me Workspace](./about_me.png)
+
 </div>
 
 <br />
