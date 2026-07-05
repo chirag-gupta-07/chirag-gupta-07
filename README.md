@@ -14,6 +14,12 @@
 
 ### 💫 About Me
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/chirag-gupta-07/chirag-gupta-07/main/about_me.png?v=1" alt="About Me Workspace" width="100%" />
+</div>
+
+<br />
+
 I am a passionate software developer who loves building applications that solve real-world problems and look stunning. I enjoy working at the intersection of front-end engineering, backend scalability, and robust system design.
 
 - 🔭 I’m currently working on expanding my knowledge in modern full stack architectures.
