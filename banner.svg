@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a051b"/>
+      <stop offset="50%" stop-color="#0c1033"/>
+      <stop offset="100%" stop-color="#02040f"/>
+    </linearGradient>
+    
+    <!-- Moving Glow Gradients -->
+    <linearGradient id="glow-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a2be2">
+        <animate attributeName="stop-color" values="#8a2be2;#ff007f;#00f2fe;#8a2be2" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#4a00e0">
+        <animate attributeName="stop-color" values="#4a00e0;#7f00ff;#4facfe;#4a00e0" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Filters for Glow Effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Styles & Animations */
+    .bg {
+      fill: url(#bg-grad);
+    }
+    
+    /* Cosmic dust / stars */
+    .star {
+      fill: #ffffff;
+      opacity: 0.3;
+      animation: pulse 3s infinite ease-in-out;
+    }
+    .star-1 { animation-delay: 0s; }
+    .star-2 { animation-delay: 1s; }
+    .star-3 { animation-delay: 2s; }
+    .star-4 { animation-delay: 1.5s; }
+    .star-5 { animation-delay: 0.5s; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 0.9; transform: scale(1.2); }
+    }
+
+    /* Floating blobs */
+    .blob {
+      opacity: 0.15;
+      filter: blur(40px);
+      animation: float-blob 20s infinite ease-in-out;
+    }
+    .blob-1 {
+      fill: #ff007f;
+      transform-origin: 200px 150px;
+    }
+    .blob-2 {
+      fill: #00f2fe;
+      animation-delay: -10s;
+      transform-origin: 600px 150px;
+    }
+
+    @keyframes float-blob {
+      0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+      33% { transform: translate(30px, -50px) scale(1.2) rotate(120deg); }
+      66% { transform: translate(-30px, 20px) scale(0.8) rotate(240deg); }
+      100% { transform: translate(0, 0) scale(1) rotate(360deg); }
+    }
+
+    /* Title text */
+    .title {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      fill: #ffffff;
+      letter-spacing: 4px;
+      animation: title-glow 4s infinite ease-in-out;
+    }
+
+    @keyframes title-glow {
+      0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 242, 254, 0.4), 0 0 20px rgba(138, 43, 226, 0.2);
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(255, 0, 127, 0.6), 0 0 30px rgba(138, 43, 226, 0.4);
+      }
+    }
+
+    /* Subtitle text */
+    .subtitle {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      fill: #a0aec0;
+      letter-spacing: 2px;
+    }
+
+    /* Coding Symbol Animation */
+    .code-bracket {
+      font-family: monospace;
+      font-size: 48px;
+      font-weight: bold;
+      fill: url(#glow-1);
+      filter: drop-shadow(0 0 8px #8a2be2);
+      animation: bracket-float 4s infinite ease-in-out;
+    }
+    
+    .bracket-left {
+      animation-delay: 0s;
+    }
+    .bracket-right {
+      animation-delay: 2s;
+    }
+
+    @keyframes bracket-float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(5deg); }
+    }
+
+    /* Tech icons grid / circles */
+    .tech-node {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.08);
+      stroke-width: 1.5;
+      animation: rotate-grid 30s infinite linear;
+      transform-origin: 400px 150px;
+    }
+
+    @keyframes rotate-grid {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Orbiting elements */
+    .orbiting-dot {
+      fill: url(#glow-1);
+      filter: drop-shadow(0 0 5px #00f2fe);
+      animation: orbit 12s infinite linear;
+      transform-origin: 400px 150px;
+    }
+
+    @keyframes orbit {
+      from { transform: rotate(0deg) translate(90px) rotate(0deg); }
+      to { transform: rotate(360deg) translate(90px) rotate(-360deg); }
+    }
+  </style>
+
+  <!-- Base Background -->
+  <rect class="bg" width="800" height="300" rx="15" />
+
+  <!-- Background Glowing Blobs -->
+  <circle class="blob blob-1" cx="200" cy="150" r="100" />
+  <circle class="blob blob-2" cx="600" cy="150" r="120" />
+
+  <!-- Tech Nodes (Background Grid) -->
+  <circle class="tech-node" cx="400" cy="150" r="110" stroke-dasharray="10 15" />
+  <circle class="tech-node" cx="400" cy="150" r="150" stroke-dasharray="5 20" style="animation-duration: 45s; animation-direction: reverse;" />
+
+  <!-- Stars / Particles -->
+  <circle class="star star-1" cx="120" cy="80" r="2" />
+  <circle class="star star-2" cx="250" cy="220" r="1.5" />
+  <circle class="star star-3" cx="680" cy="70" r="2.5" />
+  <circle class="star star-4" cx="550" cy="250" r="1.8" />
+  <circle class="star star-5" cx="380" cy="40" r="2" />
+  <circle class="star star-1" cx="720" cy="180" r="1.5" />
+  <circle class="star star-3" cx="80" cy="230" r="2" />
+
+  <!-- Orbiting element -->
+  <circle class="orbiting-dot" cx="400" cy="150" r="6" />
+
+  <!-- Coding Icons / Brackets -->
+  <g transform="translate(180, 150)">
+    <text class="code-bracket bracket-left" x="-80" y="15" text-anchor="middle">&lt;</text>
+  </g>
+  <g transform="translate(620, 150)">
+    <text class="code-bracket bracket-right" x="80" y="15" text-anchor="middle">&gt;</text>
+  </g>
+
+  <!-- Profile text -->
+  <g transform="translate(400, 140)">
+    <text class="title" x="0" y="0" text-anchor="middle">CHIRAG GUPTA</text>
+    <text class="subtitle" x="0" y="35" text-anchor="middle">FULL STACK DEVELOPER • PROBLEM SOLVER</text>
+    <text class="subtitle" x="0" y="60" text-anchor="middle" style="font-size: 13px; fill: #718096; word-spacing: 3px;">CREATING DYNAMIC &amp; ELEGANT DIGITAL EXPERIENCES</text>
+  </g>
+
+  <!-- Glowing accent border -->
+  <rect x="2" y="2" width="796" height="296" rx="13" fill="none" stroke="url(#glow-1)" stroke-width="1.5" opacity="0.6" />
+</svg>

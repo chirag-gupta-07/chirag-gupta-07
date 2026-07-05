@@ -1,0 +1,7 @@
+# Ignore preview workspace tools
+index.html
+preview_server.js
+
+# Ignore task files and logs
+.system_generated/
+*.log
