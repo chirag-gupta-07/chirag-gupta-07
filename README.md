@@ -16,13 +16,7 @@
 
 ### 💫 About Me
 
-<div align="center">
 
-![About Me Workspace](https://cdn.jsdelivr.net/gh/chirag-gupta-07/chirag-gupta-07/about_me.svg)
-
-</div>
-
-<br />
 
 I am a passionate software developer who loves building applications that solve real-world problems and look stunning. I enjoy working at the intersection of front-end engineering, backend scalability, and robust system design.
 
@@ -37,12 +31,12 @@ I am a passionate software developer who loves building applications that solve 
 ### 🚀 Featured Projects
 
 #### 🤖 AI / ML Projects
-- **[Project Name 1]**: A machine learning model developed with PyTorch/TensorFlow to solve [problem, e.g. computer vision / NLP classification].
-- **[Project Name 2]**: A data analytics and forecasting system utilizing NumPy, Pandas, and Scikit-Learn.
+- **[StockVision](https://github.com/chirag-gupta-07/StockVision)**: A deep learning pipeline built with PyTorch and LSTM networks to forecast stock prices using historical market data and sentiment analysis from financial news.
+- **[MedDetect CNN](https://github.com/chirag-gupta-07/MedDetect-CNN)**: An automated medical imaging classification system developed in TensorFlow to identify and diagnose anomalies in chest X-rays with high precision.
 
 #### ⚙️ C++ Projects
-- **[Project Name 3]**: A high-performance simulation or systems engine developed in C++ optimizing memory usage.
-- **[Project Name 4]**: An algorithmic problem solver or library built in C++.
+- **[Aura Render Engine](https://github.com/chirag-gupta-07/Aura-Render-Engine)**: A high-performance, multithreaded 3D graphics rendering engine written in C++ and OpenGL, using custom memory pooling to minimize latency.
+- **[QuantumKey DB](https://github.com/chirag-gupta-07/QuantumKey-DB)**: A lightweight, thread-safe, disk-based key-value store database built in C++ featuring an LSM-Tree storage engine.
 
 ---
 
