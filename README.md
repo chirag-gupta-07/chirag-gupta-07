@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Chirag Gupta Banner](./banner.svg)
+![Chirag Gupta Banner](https://cdn.jsdelivr.net/gh/chirag-gupta-07/chirag-gupta-07/banner.svg)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 <div align="center">
 
-![About Me Workspace](./about_me.png)
+![About Me Workspace](https://cdn.jsdelivr.net/gh/chirag-gupta-07/chirag-gupta-07/about_me.png)
 
 </div>
 
