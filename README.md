@@ -18,7 +18,7 @@
 
 <div align="center">
 
-![About Me Workspace](https://cdn.jsdelivr.net/gh/chirag-gupta-07/chirag-gupta-07/about_me.png)
+![About Me Workspace](https://cdn.jsdelivr.net/gh/chirag-gupta-07/chirag-gupta-07/about_me.svg)
 
 </div>
 

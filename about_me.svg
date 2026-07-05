@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cyber-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080711"/>
+      <stop offset="50%" stop-color="#0f0c24"/>
+      <stop offset="100%" stop-color="#05050d"/>
+    </linearGradient>
+
+    <!-- Monitor Glow -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Styling */
+    .bg { fill: url(#cyber-bg); }
+    .desk { fill: #1d1b3a; stroke: #8a2be2; stroke-width: 2; }
+    .chair { fill: #2d124d; stroke: #ff007f; stroke-width: 1.5; }
+    .monitor-frame { fill: #121324; stroke: #00f2fe; stroke-width: 2; }
+    .screen-bg { fill: #0a0b16; }
+    .keyboard { fill: #1a1c38; stroke: #00f2fe; stroke-width: 1; }
+
+    /* Flashing LED lights on PC Tower */
+    .led {
+      animation: led-flash 1s infinite alternate;
+    }
+    .led-1 { fill: #00ffcc; animation-delay: 0s; }
+    .led-2 { fill: #ff007f; animation-delay: 0.5s; }
+    
+    @keyframes led-flash {
+      0% { opacity: 0.3; }
+      100% { opacity: 1; filter: drop-shadow(0 0 2px currentColor); }
+    }
+
+    /* Screen Text / Code Scroll */
+    .code-lines {
+      animation: scroll-code 4s infinite linear;
+    }
+    
+    @keyframes scroll-code {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-30px); }
+    }
+
+    /* Typing Arm Animations */
+    .arm-left-1 {
+      animation: typing-alt-a 0.2s infinite steps(1);
+    }
+    .arm-left-2 {
+      animation: typing-alt-b 0.2s infinite steps(1);
+    }
+    .arm-right-1 {
+      animation: typing-alt-b 0.2s infinite steps(1);
+    }
+    .arm-right-2 {
+      animation: typing-alt-a 0.2s infinite steps(1);
+    }
+
+    @keyframes typing-alt-a {
+      0%, 49% { opacity: 1; stage-display: block; }
+      50%, 100% { opacity: 0; stage-display: none; }
+    }
+    @keyframes typing-alt-b {
+      0%, 49% { opacity: 0; stage-display: none; }
+      50%, 100% { opacity: 1; stage-display: block; }
+    }
+
+    /* Floating code particles */
+    .particle {
+      font-family: monospace;
+      font-size: 11px;
+      font-weight: bold;
+      fill: #00f2fe;
+      opacity: 0;
+      animation: float-up 2s infinite ease-out;
+    }
+    .p-1 { animation-delay: 0s; }
+    .p-2 { animation-delay: 0.6s; }
+    .p-3 { animation-delay: 1.2s; }
+
+    @keyframes float-up {
+      0% {
+        transform: translate(0, 0) scale(0.8);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate(-30px, -60px) scale(1.1);
+        opacity: 0;
+      }
+    }
+
+    /* Cozy lamp glow */
+    .lamp-glow {
+      fill: #ffaa00;
+      opacity: 0.15;
+      filter: blur(15px);
+    }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="500" height="300" rx="15" />
+
+  <!-- Cozy Ambient Lamp Glow -->
+  <circle class="lamp-glow" cx="50" cy="50" r="80" />
+  <path d="M 30,20 L 70,20 L 80,50 L 20,50 Z" fill="#ffaa00" />
+  <rect x="47" y="50" width="6" height="150" fill="#2d124d" />
+  <rect x="35" y="200" width="30" height="8" rx="2" fill="#2d124d" />
+
+  <!-- Window with Moon -->
+  <rect x="350" y="30" width="100" height="100" rx="10" fill="#09071a" stroke="#2b1b54" stroke-width="2" />
+  <circle cx="410" cy="65" r="20" fill="#e2e8f0" />
+  <circle cx="402" cy="65" r="18" fill="#09071a" />
+  <!-- Stars in Window -->
+  <circle cx="370" cy="50" r="1" fill="#fff" opacity="0.8" />
+  <circle cx="430" cy="90" r="1" fill="#fff" opacity="0.6" />
+  <circle cx="380" cy="110" r="1" fill="#fff" opacity="0.5" />
+
+  <!-- PC Tower -->
+  <rect x="70" y="140" width="40" height="80" rx="4" fill="#0d0e1b" stroke="#8a2be2" stroke-width="1.5" />
+  <!-- PC details / cooling fans -->
+  <circle cx="90" cy="165" r="10" fill="none" stroke="#2a2d56" stroke-width="2" />
+  <circle cx="90" cy="195" r="10" fill="none" stroke="#2a2d56" stroke-width="2" />
+  <!-- Flashing LEDs -->
+  <circle class="led led-1" cx="80" cy="210" r="2" />
+  <circle class="led led-2" cx="100" cy="210" r="2" />
+
+  <!-- Desk -->
+  <rect class="desk" x="40" y="220" width="420" height="15" rx="5" />
+  <rect x="70" y="235" width="20" height="50" fill="#131229" />
+  <rect x="410" y="235" width="20" height="50" fill="#131229" />
+
+  <!-- Chair -->
+  <path class="chair" d="M 285,160 L 320,160 L 315,225 L 280,225 Z" />
+  <rect class="chair" x="265" y="215" width="55" height="10" rx="3" />
+  <!-- Chair Stand -->
+  <rect x="290" y="225" width="6" height="35" fill="#121324" />
+  <path d="M 270,260 L 315,260 L 325,265 L 260,265 Z" fill="#0d0e1b" />
+
+  <!-- Monitor -->
+  <rect x="155" y="200" width="15" height="25" fill="#1b1c35" stroke="#00f2fe" stroke-width="1.5" />
+  <path d="M 140,220 L 185,220 L 195,223 L 130,223 Z" fill="#0d0e1b" />
+  <rect class="monitor-frame" x="120" y="110" width="85" height="90" rx="6" />
+  <rect class="screen-bg" x="125" y="115" width="75" height="80" rx="3" />
+  
+  <!-- Glowing code lines on screen -->
+  <g filter="url(#neon-glow)">
+    <clipPath id="screen-clip">
+      <rect x="125" y="115" width="75" height="80" rx="3" />
+    </clipPath>
+    <g clip-path="url(#screen-clip)">
+      <g class="code-lines">
+        <!-- Lines of dummy code blocks -->
+        <rect x="130" y="120" width="30" height="4" rx="1" fill="#ff007f" />
+        <rect x="130" y="128" width="50" height="4" rx="1" fill="#00f2fe" />
+        <rect x="135" y="136" width="40" height="4" rx="1" fill="#ffff00" />
+        <rect x="130" y="144" width="20" height="4" rx="1" fill="#8a2be2" />
+        <rect x="130" y="152" width="45" height="4" rx="1" fill="#ff007f" />
+        <rect x="135" y="160" width="35" height="4" rx="1" fill="#00f2fe" />
+        <rect x="130" y="168" width="25" height="4" rx="1" fill="#ffff00" />
+        <rect x="130" y="176" width="30" height="4" rx="1" fill="#8a2be2" />
+        
+        <!-- Repeating lines for seamless scroll -->
+        <rect x="130" y="190" width="30" height="4" rx="1" fill="#ff007f" />
+        <rect x="130" y="198" width="50" height="4" rx="1" fill="#00f2fe" />
+        <rect x="135" y="206" width="40" height="4" rx="1" fill="#ffff00" />
+        <rect x="130" y="214" width="20" height="4" rx="1" fill="#8a2be2" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Keyboard -->
+  <rect class="keyboard" x="210" y="210" width="40" height="7" rx="1" />
+
+  <!-- Character Torso -->
+  <path d="M 270,180 L 315,180 L 310,220 L 275,220 Z" fill="#2c2a63" stroke="#8a2be2" stroke-width="1.5" />
+
+  <!-- Character Head -->
+  <!-- Hair -->
+  <path d="M 270,140 Q 265,130 275,125 Q 295,120 305,135 Q 315,145 305,152 Z" fill="#1b1c35" stroke="#ff007f" stroke-width="1" />
+  <!-- Face/Skin -->
+  <rect x="278" y="142" width="22" height="20" rx="3" fill="#ffdbac" />
+  <!-- Neon Visor / Glasses -->
+  <rect x="274" y="146" width="16" height="6" rx="1" fill="#00f2fe" filter="url(#neon-glow)" />
+  <rect x="277" y="148" width="10" height="2" fill="#fff" />
+
+  <!-- Left Arm (Typing frames) -->
+  <!-- State 1: Up -->
+  <g class="arm-left-1">
+    <path d="M 270,190 Q 240,185 228,198" fill="none" stroke="#2c2a63" stroke-width="6" stroke-linecap="round" />
+    <circle cx="228" cy="198" r="3" fill="#ffdbac" />
+  </g>
+  <!-- State 2: Down -->
+  <g class="arm-left-2">
+    <path d="M 270,190 Q 245,195 224,208" fill="none" stroke="#2c2a63" stroke-width="6" stroke-linecap="round" />
+    <circle cx="224" cy="208" r="3" fill="#ffdbac" />
+  </g>
+
+  <!-- Right Arm (Typing frames) -->
+  <!-- State 1: Down -->
+  <g class="arm-right-1">
+    <path d="M 275,195 Q 250,200 230,209" fill="none" stroke="#373575" stroke-width="6" stroke-linecap="round" />
+    <circle cx="230" cy="209" r="3" fill="#ffdbac" />
+  </g>
+  <!-- State 2: Up -->
+  <g class="arm-right-2">
+    <path d="M 275,195 Q 245,188 234,196" fill="none" stroke="#373575" stroke-width="6" stroke-linecap="round" />
+    <circle cx="234" cy="196" r="3" fill="#ffdbac" />
+  </g>
+
+  <!-- Floating Coding Particles -->
+  <text class="particle p-1" x="215" y="185">{}</text>
+  <text class="particle p-2" x="225" y="185">;</text>
+  <text class="particle p-3" x="210" y="185">&lt;/&gt;</text>
+
+  <!-- Potted Plant on Desk -->
+  <rect x="390" y="195" width="20" height="25" rx="3" fill="#321e11" />
+  <path d="M 385,195 L 415,195 L 410,198 L 390,198 Z" fill="#4d3222" />
+  <!-- Leaves -->
+  <circle cx="395" cy="185" r="8" fill="#00ffcc" opacity="0.9" />
+  <circle cx="405" cy="180" r="10" fill="#00ff99" opacity="0.9" />
+  <circle cx="390" cy="175" r="7" fill="#00cc88" opacity="0.9" />
+</svg>
