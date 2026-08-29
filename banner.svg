@@ -185,8 +185,8 @@
   <!-- Profile text -->
   <g transform="translate(400, 140)">
     <text class="title" x="0" y="0" text-anchor="middle">CHIRAG GUPTA</text>
-    <text class="subtitle" x="0" y="35" text-anchor="middle">FULL STACK DEVELOPER • PROBLEM SOLVER</text>
-    <text class="subtitle" x="0" y="60" text-anchor="middle" style="font-size: 13px; fill: #718096; word-spacing: 3px;">CREATING DYNAMIC &amp; ELEGANT DIGITAL EXPERIENCES</text>
+    <text class="subtitle" x="0" y="35" text-anchor="middle">AI/ML DEVELOPER • GENERATIVE AI ENTHUSIAST</text>
+    <text class="subtitle" x="0" y="60" text-anchor="middle" style="font-size: 13px; fill: #718096; word-spacing: 3px;">BUILDING PRACTICAL AI APPLICATIONS &amp; INTELLIGENT SYSTEMS</text>
   </g>
 
   <!-- Glowing accent border -->
