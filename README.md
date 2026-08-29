@@ -40,10 +40,6 @@ I am a **B.Tech Computer Science (AI/ML)** student focused on engineering practi
   - **Tech Stack**: Python, FastAPI, LangChain, ChromaDB, Mistral AI, JavaScript, HTML/CSS
   - **Live Demo**: [ai-pdf-analyzer-epbj.onrender.com](https://ai-pdf-analyzer-epbj.onrender.com)
 
-- **[CredifyAI — Fake News Detection System](https://github.com/chirag-gupta-07/CredifyAI---AI-powered-News-Detection-System)**
-  An AI-powered verification workflow and dashboard that analyzes text claims and screenshot images to evaluate news credibility and return confidence scores.
-  - **Tech Stack**: OpenAI GPT Models, n8n Automation & Webhooks, JavaScript, HTML5, CSS3
-
 - **[Used Car Price Prediction Model](https://github.com/chirag-gupta-07/Used_Car_Price_Prediction_Model)**
   A machine learning regression pipeline and interactive Streamlit web dashboard that predicts vehicle resale values based on automotive features and historical data.
   - **Tech Stack**: Python, Scikit-learn, Pandas, NumPy, Streamlit, Plotly, Joblib
@@ -52,7 +48,7 @@ I am a **B.Tech Computer Science (AI/ML)** student focused on engineering practi
   A modern, glassmorphism web chat application integrating LangChain with Mistral AI, featuring dynamic persona switching (Simple, Angry, Funny, Sad) backed by a FastAPI backend.
   - **Tech Stack**: Python, FastAPI, LangChain, Mistral AI, JavaScript, HTML/CSS
 
-- **[PassSafe (Ventora Password Manager)](https://github.com/chirag-gupta-07/PassSafe---Password-Manager)**
+- **[PassSafe (Password Manager)](https://github.com/chirag-gupta-07/PassSafe---Password-Manager)**
   A full-stack responsive credential management application built with secure CRUD operations, dynamic clipboard integration, and MongoDB storage.
   - **Tech Stack**: React 19, Tailwind CSS, Node.js, Express.js, MongoDB
   - **Live Demo**: [pass-safe-password.vercel.app](https://pass-safe-password.vercel.app/)
