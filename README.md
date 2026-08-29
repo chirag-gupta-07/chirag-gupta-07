@@ -43,6 +43,7 @@ I am a **B.Tech Computer Science (AI/ML)** student focused on engineering practi
 - **[Used Car Price Prediction Model](https://github.com/chirag-gupta-07/Used_Car_Price_Prediction_Model)**
   A machine learning regression pipeline and interactive Streamlit web dashboard that predicts vehicle resale values based on automotive features and historical data.
   - **Tech Stack**: Python, Scikit-learn, Pandas, NumPy, Streamlit, Plotly, Joblib
+  - **Live Demo**: [used-car-prediction-07.streamlit.app](https://used-car-prediction-07.streamlit.app/)
 
 - **[Simple AI ChatBot](https://github.com/chirag-gupta-07/Simple-Chatbot)**
   A modern, glassmorphism web chat application integrating LangChain with Mistral AI, featuring dynamic persona switching (Simple, Angry, Funny, Sad) backed by a FastAPI backend.
